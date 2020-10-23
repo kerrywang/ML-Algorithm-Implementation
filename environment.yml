@@ -1,0 +1,11 @@
+name: ml-impl-env
+channels:
+  - defaults
+dependencies:
+  - python=3.6
+  - numpy
+  - scipy
+  - scikit-learn
+  - pytest
+prefix: /home/kaiyuewang/miniconda3/envs/ml-impl-env
+
