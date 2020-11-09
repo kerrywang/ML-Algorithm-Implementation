@@ -1,5 +1,5 @@
 import SupervisedLearning.util._activation_function as activation_functions
-import SupervisedLearning.util._loss_function as loss_functions
+import SupervisedLearning.util.Loss._loss_function as loss_functions
 from SupervisedLearning.util._layer import LinearLayer
 
 from base import BaseEstimator

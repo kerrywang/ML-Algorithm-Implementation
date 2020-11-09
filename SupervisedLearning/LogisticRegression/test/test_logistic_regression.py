@@ -10,7 +10,7 @@ from sklearn.utils._testing import assert_warns
 from sklearn.utils._testing import ignore_warnings
 from sklearn.utils._testing import assert_warns_message
 
-from SupervisedLearning.LinearModel.logistic_regression import LogisticRegression
+from SupervisedLearning.LogisticRegression.logistic_regression import LogisticRegression
 import pytest
 
 iris = load_iris()
@@ -38,5 +38,11 @@ def check_predictions(clf, X, y):
 def test_2_class_prediction():
     check_predictions(LogisticRegression(), X, Y1)
 
+def test_predict_iris():
+    n_samples, n_features = iris.data.shape
+
+    target = iris.target_names[iris.target]
+    cls = LogisticRegression()
+
 if __name__ == "__main__":
-    test_2_class_prediction()
+    test_predict_iris()

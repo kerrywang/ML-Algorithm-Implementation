@@ -1,11 +1,14 @@
 name: ml-impl-env
-channels:
-  - defaults
 dependencies:
   - python=3.6
   - numpy
   - scipy
   - scikit-learn
   - pytest
+  - notebook
+  - matplotlib
+channels:
+  - defaults
+  - conda-forge
 prefix: /home/kaiyuewang/miniconda3/envs/ml-impl-env
 
