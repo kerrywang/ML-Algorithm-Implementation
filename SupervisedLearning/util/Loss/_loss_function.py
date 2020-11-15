@@ -34,6 +34,11 @@ class hinge_loss(AbstractLoss):
         self.y_pred = None
 
     def __call__(self, y_pred, y_true):
+        '''
+        :param y_pred: ndarray [N, C] Where N is num sample, C is num class
+        :param y_true:  ndarray [N, C] Where N is num sample C is num class
+        :return:
+        '''
         self.y_true = y_true
         self.y_pred = y_pred
         return np.sum(0, 1 - y_true * y_pred)

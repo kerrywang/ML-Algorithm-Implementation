@@ -1,9 +1,12 @@
 import abc
 
-class BaseEstimator:
+class BaseEstimator(abc.ABC):
     """
     Base class for estimators, leaving it empty for now just incase i want to add more common utils later
     """
+    def fit(self, **kwargs):
+        pass
+
 
 
 class Derivable(abc.ABC):
